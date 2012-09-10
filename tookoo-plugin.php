@@ -51,7 +51,7 @@ function tookoo_plugin_register_cpt() {
 		'rewrite' => array( 'slug' => 'product' ), // Permalinks format
 		'menu_position' => 5,
 		'taxonomies' => array( 'post_tag', 'category' ),
-		'menu_icon' => plugin_dir_url( __FILE__ ) . '/images/calendar-icon.gif',  // Icon Path
+		'menu_icon' => plugin_dir_url( __FILE__ ) . '/images/tookoo_product.png',  // Icon Path
 		'has_archive' => true
 	); 
 
@@ -59,3 +59,5 @@ function tookoo_plugin_register_cpt() {
 }
 
 add_action( 'init', 'tookoo_plugin_register_cpt' );
+
+include_once('inc/metabox_code/functions/add_meta_box.php');
